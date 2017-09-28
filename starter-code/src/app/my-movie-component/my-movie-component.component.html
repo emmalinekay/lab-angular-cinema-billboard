@@ -1,0 +1,25 @@
+<h1>  Room {{movieInfo.id }} </h1>
+
+<h2>{{ movieInfo.title }} Details  </h2>
+
+<img [src]="movieInfo.poster">
+
+<p> Genres: </p>
+<ul>
+  <li *ngFor="let oneMovie of movieInfo.genres">
+      <p> {{ oneMovie }} </p>
+    </li>
+  </ul> 
+
+<p> Year: {{ movieInfo.year }} </p>
+
+<p> Director: {{ movieInfo.director }} </p>
+
+<p> Actors: </p>
+<ul>
+  <li *ngFor="let oneMovie of movieInfo.actors">
+      <p> {{ oneMovie }} </p>
+    </li>
+  </ul>
+
+<p> Synopsis: {{ movieInfo.synopsis }} </p>

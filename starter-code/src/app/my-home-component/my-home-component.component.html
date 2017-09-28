@@ -1,0 +1,14 @@
+<h2> Our Movies </h2>
+
+<ul>
+  <li *ngFor="let oneMovie of movieThang.getMovies()">
+    <h3> Room {{ oneMovie.id}} </h3>
+    <img [src]="oneMovie.poster">
+
+
+                  <!-- /partners/  :thePartnerId -->
+    <a [routerLink]="['/movie', oneMovie.id]">
+      {{ oneMovie.title }}
+    </a>
+  </li>
+</ul>
